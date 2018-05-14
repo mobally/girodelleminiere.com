@@ -2,7 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [staging]
-ec2-18-130-88-2.eu-west-2.compute.amazonaws.com
+your_server_hostname
 
 [web]
-ec2-18-130-88-2.eu-west-2.compute.amazonaws.com
+your_server_hostname
