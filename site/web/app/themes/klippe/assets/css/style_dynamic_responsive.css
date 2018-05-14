@@ -1,0 +1,38 @@
+@media only screen and (max-width: 1024px){
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+/* generated in /srv/www/girodelleminiere.com/current/web/app/themes/klippe/assets/custom-styles/general-custom-styles-responsive.php klippe_mikado_h1_responsive_styles3 function */
+h1 { font-size: 65px;}
+
+/* generated in /srv/www/girodelleminiere.com/current/web/app/themes/klippe/assets/custom-styles/general-custom-styles-responsive.php klippe_mikado_h2_responsive_styles3 function */
+h2 { font-size: 40px;}
+
+}
+
+@media only screen and (min-width: 681px) and (max-width: 768px){
+/* generated in /srv/www/girodelleminiere.com/current/web/app/themes/klippe/assets/custom-styles/general-custom-styles-responsive.php klippe_mikado_h1_responsive_styles function */
+h1 { font-size: 55px;}
+
+/* generated in /srv/www/girodelleminiere.com/current/web/app/themes/klippe/assets/custom-styles/general-custom-styles-responsive.php klippe_mikado_h2_responsive_styles function */
+h2 { font-size: 45px;}
+
+/* generated in /srv/www/girodelleminiere.com/current/web/app/themes/klippe/assets/custom-styles/general-custom-styles-responsive.php klippe_mikado_h3_responsive_styles function */
+h3 { font-size: 30px;}
+
+}
+
+@media only screen and (max-width: 680px){
+/* generated in /srv/www/girodelleminiere.com/current/web/app/themes/klippe/assets/custom-styles/general-custom-styles-responsive.php klippe_mikado_h1_responsive_styles2 function */
+h1 { font-size: 42px;}
+
+/* generated in /srv/www/girodelleminiere.com/current/web/app/themes/klippe/assets/custom-styles/general-custom-styles-responsive.php klippe_mikado_h2_responsive_styles2 function */
+h2 { font-size: 38px;}
+
+/* generated in /srv/www/girodelleminiere.com/current/web/app/themes/klippe/assets/custom-styles/general-custom-styles-responsive.php klippe_mikado_h3_responsive_styles2 function */
+h3 { font-size: 30px;}
+
+/* generated in /srv/www/girodelleminiere.com/current/web/app/themes/klippe/assets/custom-styles/general-custom-styles-responsive.php klippe_mikado_h4_responsive_styles2 function */
+h4 { font-size: 17px;}
+
+}
