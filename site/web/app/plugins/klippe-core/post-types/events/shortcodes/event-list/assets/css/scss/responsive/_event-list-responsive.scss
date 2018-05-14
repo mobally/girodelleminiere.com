@@ -1,0 +1,33 @@
+.mkdf-event-list-holder.mkdf-event-list-standard{
+    @for $i from 3 through 5 {
+        &.mkdf-event-list-col-#{$i} {
+            .mkdf-el-item{
+
+
+                @include ipad-portrait{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel {
+    @include laptop-landscape-medium {
+        .owl-nav {
+            .owl-prev {
+                left: -40px;
+            }
+
+            .owl-next {
+                right: -40px;
+            }
+        }
+    }
+
+    @include phone-landscape {
+        .owl-nav {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,2409 @@
+/* ==========================================================================
+   Global partials
+   ========================================================================== */
+/* common mixins - start */
+/* common mixins - end */
+/* mixins styles - start */
+/* mixins styles - end */
+/* ==========================================================================
+   Custom Post Types styles
+   ========================================================================== */
+.tax-event-category .mkdf-content .mkdf-content-inner > .mkdf-container > .mkdf-container-inner,
+.tax-event-category .mkdf-content .mkdf-content-inner > .mkdf-full-width > .mkdf-full-width-inner {
+  padding-top: 80px;
+  padding-bottom: 22px;
+}
+
+.mkdf-event-single-holder .mkdf-full-width-inner {
+  padding-top: 117px;
+}
+
+.mkdf-event-single-holder:last-child .mkdf-full-width-inner {
+  padding-bottom: 0px;
+}
+
+.mkdf-event-single-holder .mkdf-event-content {
+  margin-top: 18px;
+}
+
+.mkdf-event-single-holder .mkdf-event-top-right {
+  padding-top: 5px;
+}
+
+.mkdf-event-single-holder .mkdf-event-top-right .mkdf-event-info-title {
+  margin-bottom: 15px;
+}
+
+.mkdf-event-single-holder .mkdf-event-info-holder {
+  margin-top: 19px;
+}
+
+.mkdf-event-single-holder .mkdf-event-info-holder .mkdf-event-info-title {
+  display: none;
+  margin-bottom: 7px;
+}
+
+.mkdf-event-single-holder .mkdf-event-info-item {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  color: #3d3d3d;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.mkdf-event-single-holder .mkdf-event-info-item .mkdf-event-info-item-title {
+  display: table-cell;
+  width: 33.33%;
+}
+
+.mkdf-event-single-holder .mkdf-event-info-item .mkdf-event-info-item-desc {
+  display: table-cell;
+  color: #3d3d3d;
+  text-transform: capitalize;
+}
+
+.mkdf-event-single-holder .mkdf-event-info-item a {
+  color: inherit;
+}
+
+.mkdf-event-single-holder .mkdf-event-info-item a:hover {
+  color: #6534ff;
+}
+
+.mkdf-event-single-holder .mkdf-event-social {
+  margin-top: 22px;
+  padding-top: 25px;
+  border-top: 2px solid #dbfc00;
+}
+
+.mkdf-event-single-holder .mkdf-event-social .mkdf-social-share-holder {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.mkdf-event-single-holder .mkdf-event-social .mkdf-social-share-holder .mkdf-social-title {
+  display: table-cell;
+  width: 33.33%;
+}
+
+.mkdf-event-single-holder .mkdf-event-image-holder {
+  margin-top: 140px;
+}
+
+.mkdf-event-single-holder .mkdf-event-images-gallery {
+  font-size: 0;
+  margin: -15px -15px 35px -15px;
+}
+
+.mkdf-event-single-holder .mkdf-event-images-gallery.mkdf-event-gallery-col-3 .mkdf-event-single-image {
+  width: 33.33%;
+}
+
+.mkdf-event-single-holder .mkdf-event-images-gallery .mkdf-event-single-image {
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.mkdf-event-single-holder .mkdf-event-images-gallery .mkdf-event-single-image a {
+  position: relative;
+  display: inline-block;
+}
+
+.mkdf-event-single-holder .mkdf-event-images-gallery .mkdf-event-single-image a img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mkdf-event-single-holder .mkdf-event-images-gallery .mkdf-event-single-image a:before {
+  font-family: 'FontAwesome';
+  content: "\f002";
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: all 0.35s cubic-bezier(0.14, 0.41, 0.58, 1);
+  -moz-transition: all 0.35s cubic-bezier(0.14, 0.41, 0.58, 1);
+  transition: all 0.35s cubic-bezier(0.14, 0.41, 0.58, 1);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.mkdf-event-single-holder .mkdf-event-images-gallery .mkdf-event-single-image a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-transition: opacity 0.35s cubic-bezier(0.14, 0.41, 0.58, 1);
+  -moz-transition: opacity 0.35s cubic-bezier(0.14, 0.41, 0.58, 1);
+  transition: opacity 0.35s cubic-bezier(0.14, 0.41, 0.58, 1);
+}
+
+.mkdf-event-single-holder .mkdf-event-images-gallery .mkdf-event-single-image a:hover:before, .mkdf-event-single-holder .mkdf-event-images-gallery .mkdf-event-single-image a:hover:after {
+  opacity: 1;
+}
+
+.mkdf-event-single-holder .mkdf-event-related-holder {
+  text-align: center;
+  margin-top: 38px;
+  margin-bottom: 50px;
+}
+
+.mkdf-event-single-holder .mkdf-event-related-holder .mkdf-event-related-slider {
+  margin-top: 44px;
+}
+
+.mkdf-event-single-holder .mkdf-event-related-holder .slick-track {
+  margin: 0;
+}
+
+.mkdf-event-single-holder .mkdf-event-related-holder .mkdf-event-item {
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.mkdf-event-single-holder .mkdf-event-related-holder .mkdf-event-item:hover .mkdf-item-text-overlay {
+  opacity: 1;
+}
+
+.mkdf-event-single-holder .mkdf-event-related-holder .mkdf-event-item:hover .mkdf-item-text-overlay-inner {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.mkdf-event-single-holder .mkdf-event-related-holder .mkdf-item-image-holder {
+  position: relative;
+}
+
+.mkdf-event-single-holder .mkdf-event-related-holder .mkdf-item-image-holder img {
+  vertical-align: middle;
+}
+
+.mkdf-event-single-holder .mkdf-event-related-holder .mkdf-item-text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: rgba(219, 252, 0, 0.85);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.53, 0.01, 0.18, 1);
+  -moz-transition: opacity 0.3s cubic-bezier(0.53, 0.01, 0.18, 1);
+  transition: opacity 0.3s cubic-bezier(0.53, 0.01, 0.18, 1);
+}
+
+.mkdf-event-single-holder .mkdf-event-related-holder .mkdf-item-text-overlay .mkdf-item-info-category {
+  color: #fff;
+  position: relative;
+  z-index: 4;
+}
+
+.mkdf-event-single-holder .mkdf-event-related-holder .mkdf-item-text-overlay .mkdf-item-title,
+.mkdf-event-single-holder .mkdf-event-related-holder .mkdf-item-text-overlay .mkdf-item-title a {
+  color: #fff;
+}
+
+.mkdf-event-single-holder .mkdf-event-related-holder .mkdf-item-text-overlay-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(40px);
+  -moz-transform: translateY(40px);
+  transform: translateY(40px);
+  -webkit-transition: all 0.3s cubic-bezier(0.53, 0.01, 0.18, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.53, 0.01, 0.18, 1);
+  transition: all 0.3s cubic-bezier(0.53, 0.01, 0.18, 1);
+}
+
+.mkdf-event-single-holder .mkdf-event-related-holder .mkdf-item-text-holder {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.mkdf-event-single-holder .mkdf-event-related-holder .mkdf-event-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.mkdf-event-single-holder .slick-slider .mkdf-slick-prev,
+.mkdf-event-single-holder .slick-slider .mkdf-slick-next {
+  color: #fff;
+}
+
+.mkdf-event-single-holder .slick-slider .mkdf-slick-prev {
+  left: 10px;
+}
+
+.mkdf-event-single-holder .slick-slider .mkdf-slick-next {
+  right: 10px;
+}
+
+.mkdf-event-single-nav {
+  margin-top: 50px;
+  padding: 30px 20px;
+  background-color: #f9f9f9;
+}
+
+.mkdf-event-single-nav .mkdf-event-single-nav-inner {
+  display: table;
+  width: 100%;
+}
+
+.mkdf-event-single-nav .mkdf-event-single-nav-inner a {
+  color: #303030;
+}
+
+.mkdf-event-single-nav .mkdf-event-single-nav-inner a:hover {
+  color: #dbfc00;
+}
+
+.mkdf-event-single-nav .mkdf-event-prev {
+  display: table-cell;
+  text-align: left;
+}
+
+.mkdf-event-single-nav .mkdf-event-prev a span {
+  padding-right: 5px;
+}
+
+.mkdf-event-single-nav .mkdf-event-next {
+  display: table-cell;
+  text-align: right;
+}
+
+.mkdf-event-single-nav .mkdf-event-next a span {
+  padding-left: 5px;
+}
+
+/* ==========================================================================
+   #Event List Carousel styles
+   ========================================================================== */
+.mkdf-event-list-holder.mkdf-event-list-carousel {
+  margin: 0 -17px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-inner {
+  padding: 0 17px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-image a:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-image a:hover:before {
+  opacity: 1;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-image img {
+  vertical-align: middle;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-image {
+  position: relative;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-date {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  padding: 10px 12px 12px;
+  background-color: #6534ff;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  text-align: center;
+  min-width: 80px;
+  box-sizing: border-box;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-date .mkdf-el-item-day {
+  font-size: 34px;
+  font-style: italic;
+  line-height: 1em;
+  font-weight: 800;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-date .mkdf-el-item-my .mkdf-el-item-month {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  text-transform: lowercase;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-content {
+  padding: 25px 0 0;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-title {
+  margin: 0 0 8px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-time,
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-location {
+  display: inline-block;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-location:before {
+  content: "\f041";
+  font-family: FontAwesome;
+  display: inline;
+  font-size: 16px;
+  padding-right: 4px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-time {
+  padding-left: 5px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-time:before {
+  content: "\f073";
+  font-family: FontAwesome;
+  display: inline;
+  font-size: 14px;
+  padding-right: 4px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-read-more-link {
+  margin-top: 14px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-read-more-link a {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-read-more-link a:hover {
+  color: #dbfc00;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-read-more-link a:after {
+  content: "\f067";
+  font-family: FontAwesome;
+  display: inline;
+  font-size: 10px;
+  padding-left: 7px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .owl-nav .owl-prev {
+  left: -70px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel .owl-nav .owl-next {
+  right: -70px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel.mkdf-event-list-light .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-title,
+.mkdf-event-list-holder.mkdf-event-list-carousel.mkdf-event-list-light .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-read-more-link a {
+  color: #fff;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel.mkdf-event-list-light .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-title:hover,
+.mkdf-event-list-holder.mkdf-event-list-carousel.mkdf-event-list-light .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-read-more-link a:hover {
+  color: #dbfc00;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel.mkdf-event-list-light .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-location,
+.mkdf-event-list-holder.mkdf-event-list-carousel.mkdf-event-list-light .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-time {
+  color: #c5c5c5;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel.mkdf-event-list-light .owl-nav .owl-next,
+.mkdf-event-list-holder.mkdf-event-list-carousel.mkdf-event-list-light .owl-nav .owl-prev {
+  color: #fff;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-carousel.mkdf-event-list-light .owl-nav .owl-next:hover,
+.mkdf-event-list-holder.mkdf-event-list-carousel.mkdf-event-list-light .owl-nav .owl-prev:hover {
+  color: #dbfc00;
+}
+
+/* ==========================================================================
+   #Event List Standard styles
+   ========================================================================== */
+.mkdf-event-list-holder.mkdf-event-list-standard {
+  display: inline-block;
+  width: 100%;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-event-list-holder-inner {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item {
+  position: relative;
+  padding: 0;
+  float: left;
+  border: 0;
+  box-sizing: border-box;
+  margin: 0 2% 2% 0;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item .mkdf-el-item-image {
+  position: relative;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item .mkdf-el-item-image a:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item .mkdf-el-item-image a:hover:before {
+  opacity: 1;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item .mkdf-el-item-image img {
+  vertical-align: middle;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item .mkdf-el-item-date {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  padding: 10px 12px 12px;
+  background-color: #6534ff;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  text-align: center;
+  min-width: 80px;
+  box-sizing: border-box;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item .mkdf-el-item-date .mkdf-el-item-day {
+  font-size: 34px;
+  font-style: italic;
+  line-height: 1em;
+  font-weight: 800;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item .mkdf-el-item-date .mkdf-el-item-my .mkdf-el-item-month {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  text-transform: lowercase;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item .mkdf-el-item-content {
+  padding: 25px 0;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-title {
+  margin: 0 0 8px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-time,
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-location {
+  display: inline-block;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-location:before {
+  content: "\f041";
+  font-family: FontAwesome;
+  display: inline;
+  font-size: 16px;
+  padding-right: 4px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-time {
+  padding-left: 5px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-time:before {
+  content: "\f073";
+  font-family: FontAwesome;
+  display: inline;
+  font-size: 14px;
+  padding-right: 4px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-read-more-link {
+  margin-top: 14px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-read-more-link a {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-read-more-link a:hover {
+  color: #dbfc00;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-read-more-link a:after {
+  content: "\f067";
+  font-family: FontAwesome;
+  display: inline;
+  font-size: 10px;
+  padding-left: 7px;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard .mkdf-event-list-holder-inner {
+  clear: both;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard.mkdf-event-list-col-1 .mkdf-el-item {
+  width: 100%;
+  margin: 0 0 2%;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard.mkdf-event-list-col-2 .mkdf-el-item {
+  width: 49%;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard.mkdf-event-list-col-3 .mkdf-el-item {
+  width: 32%;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard.mkdf-event-list-col-4 .mkdf-el-item {
+  width: 23.5%;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard.mkdf-event-list-col-5 .mkdf-el-item {
+  width: 18.4%;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard.mkdf-event-list-col-2 .mkdf-el-item:nth-child(2n),
+.mkdf-event-list-holder.mkdf-event-list-standard.mkdf-event-list-col-3 .mkdf-el-item:nth-child(3n),
+.mkdf-event-list-holder.mkdf-event-list-standard.mkdf-event-list-col-4 .mkdf-el-item:nth-child(4n),
+.mkdf-event-list-holder.mkdf-event-list-standard.mkdf-event-list-col-5 .mkdf-el-item:nth-child(5n) {
+  margin-right: 0;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard.mkdf-event-list-col-3 .mkdf-el-item:nth-child(3n+1),
+.mkdf-event-list-holder.mkdf-event-list-standard.mkdf-event-list-col-4 .mkdf-el-item:nth-child(4n+1),
+.mkdf-event-list-holder.mkdf-event-list-standard.mkdf-event-list-col-5 .mkdf-el-item:nth-child(5n+1) {
+  clear: both;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard.mkdf-event-list-light .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-title,
+.mkdf-event-list-holder.mkdf-event-list-standard.mkdf-event-list-light .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-read-more-link a {
+  color: #fff;
+}
+
+.mkdf-event-list-holder.mkdf-event-list-standard.mkdf-event-list-light .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-location,
+.mkdf-event-list-holder.mkdf-event-list-standard.mkdf-event-list-light .mkdf-el-item .mkdf-el-item-content .mkdf-el-item-location-title-holder .mkdf-el-item-time {
+  color: #c5c5c5;
+}
+
+.mkdf-el-list-paging {
+  text-align: center;
+}
+
+.mkdf-el-list-paging .mkdf-el-list-load-more .mkdf-btn {
+  margin: 30px 0;
+}
+
+/* ==========================================================================
+   Portfolio Single page style - begin
+   ========================================================================== */
+.mkdf-portfolio-single-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 80px;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder .mkdf-ps-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder .mkdf-ps-image a, .mkdf-portfolio-single-holder .mkdf-ps-image-holder .mkdf-ps-image img {
+  position: relative;
+  display: block;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-item-title {
+  margin: 0 0 3px;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-info-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-info-holder > h4 {
+  margin: 0 0 14px;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-info-holder .mkdf-ps-info-item {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0 0 2px;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-info-holder .mkdf-ps-info-item:not(.mkdf-ps-content-item) {
+  font-style: italic;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-info-holder .mkdf-ps-info-item > p,
+.mkdf-portfolio-single-holder .mkdf-ps-info-holder .mkdf-ps-info-item > a {
+  margin: 0;
+  display: table-cell;
+  width: 72%;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-info-holder .mkdf-ps-info-item > p a {
+  margin-right: 3px;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-info-holder .mkdf-ps-info-item .mkdf-ps-info-title {
+  margin: 0;
+  padding-right: 10px;
+  display: table-cell;
+  width: 28%;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-info-holder .mkdf-ps-info-item.mkdf-ps-social-share {
+  padding-top: 25px;
+  border-top: 2px solid #dbfc00;
+  margin-top: 22px;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-info-holder .mkdf-ps-info-item.mkdf-ps-social-share:before {
+  content: "SHARE";
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  color: #000;
+  line-height: 25px;
+  position: relative;
+  top: 1px;
+  padding-right: 36px;
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.mkdf-portfolio-single-holder .owl-nav .owl-prev,
+.mkdf-portfolio-single-holder .owl-nav .owl-next {
+  color: #dbfc00;
+}
+
+/* ==========================================================================
+   Portfolio Single page style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single page specific style for types - begin
+   ========================================================================== */
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-gallery-images {
+  /***** Columns Layout - begin *****/
+  /***** Columns Layout - end *****/
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-gallery-images.mkdf-ps-two-columns .mkdf-ps-image {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-gallery-images.mkdf-ps-two-columns .mkdf-ps-image:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-gallery-images.mkdf-ps-three-columns .mkdf-ps-image {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-gallery-images.mkdf-ps-three-columns .mkdf-ps-image:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-gallery-images.mkdf-ps-four-columns .mkdf-ps-image {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1201px) {
+  .mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-gallery-images.mkdf-ps-four-columns .mkdf-ps-image:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images {
+  /***** Columns Layout - begin *****/
+  /***** Columns Layout - end *****/
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images .mkdf-ps-image,
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images .mkdf-ps-grid-sizer {
+  width: 25%;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images .mkdf-ps-grid-gutter {
+  width: 0;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images .mkdf-ps-image a,
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images .mkdf-ps-image img {
+  height: 100%;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images .mkdf-ps-masonry-large-width img {
+  width: 100%;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-two-columns .mkdf-ps-image,
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-two-columns .mkdf-ps-grid-sizer {
+  width: 50%;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-two-columns .mkdf-ps-image.mkdf-ps-masonry-large-width,
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-two-columns .mkdf-ps-image.mkdf-ps-masonry-large-width-height {
+  width: 100%;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-three-columns .mkdf-ps-image,
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-three-columns .mkdf-ps-grid-sizer {
+  width: 33.33333%;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-three-columns .mkdf-ps-image.mkdf-ps-masonry-large-width,
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-three-columns .mkdf-ps-image.mkdf-ps-masonry-large-width-height {
+  width: 66.66667%;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-four-columns .mkdf-ps-image,
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-four-columns .mkdf-ps-grid-sizer {
+  width: 25%;
+}
+
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-four-columns .mkdf-ps-image.mkdf-ps-masonry-large-width,
+.mkdf-portfolio-single-holder .mkdf-ps-image-holder.mkdf-ps-masonry-images.mkdf-ps-four-columns .mkdf-ps-image.mkdf-ps-masonry-large-width-height {
+  width: 50%;
+}
+
+/* ==========================================================================
+   Portfolio Single page specific style for types - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Gallery layout style - begin
+   ========================================================================== */
+.mkdf-portfolio-single-holder.mkdf-ps-gallery-layout .mkdf-ps-image-holder {
+  width: 100%;
+  margin: 50px 0 0;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-gallery-layout .mkdf-ps-image-holder .mkdf-ps-image {
+  float: left;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-gallery-layout .mkdf-ps-image-holder .mkdf-ps-image a:hover:after {
+  opacity: 1;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-gallery-layout .mkdf-ps-image-holder .mkdf-ps-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-gallery-layout > .mkdf-grid-row {
+  margin-top: 40px;
+}
+
+/* ==========================================================================
+   Portfolio Single - Gallery layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Huge Images layout style - begin
+   ========================================================================== */
+.mkdf-portfolio-single-holder.mkdf-ps-huge-images-layout {
+  padding: 0 4%;
+  box-sizing: border-box;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-huge-images-layout .mkdf-ps-image-holder {
+  margin: 0 0 40px;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-huge-images-layout .mkdf-ps-image-holder .mkdf-ps-image {
+  margin: 0 0 30px;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-huge-images-layout .mkdf-ps-image-holder .mkdf-ps-image:last-child {
+  margin: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .mkdf-portfolio-single-holder.mkdf-ps-huge-images-layout {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mkdf-portfolio-single-holder.mkdf-ps-huge-images-layout {
+    padding: 0 30px;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Single - Huge Images layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Images layout style - begin
+   ========================================================================== */
+.mkdf-portfolio-single-holder.mkdf-ps-images-layout .mkdf-ps-image-holder {
+  margin: 50px 0 0;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-images-layout .mkdf-ps-image-holder .mkdf-ps-image {
+  margin: 0 0 30px;
+}
+
+/* ==========================================================================
+   Portfolio Single - Images layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Masonry layout style - begin
+   ========================================================================== */
+.mkdf-portfolio-single-holder.mkdf-ps-masonry-layout .mkdf-ps-image-holder {
+  margin: 50px 0 0;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-masonry-layout .mkdf-ps-image-holder .mkdf-ps-image-inner {
+  opacity: 0;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-masonry-layout > .mkdf-grid-row {
+  margin-top: 40px;
+}
+
+/* ==========================================================================
+   Portfolio Single - Masonry layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Slider layout style - begin
+   ========================================================================== */
+.mkdf-portfolio-single-holder.mkdf-ps-slider-layout .mkdf-ps-image-holder {
+  margin: 50px 0 0;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-slider-layout .mkdf-ps-image-holder .mkdf-ps-image-inner {
+  visibility: hidden;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-slider-layout .mkdf-ps-image-holder .mkdf-ps-image {
+  margin: 0 0 30px;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-slider-layout .mkdf-ps-image-holder .mkdf-ps-image img {
+  width: 100%;
+}
+
+/* ==========================================================================
+   Portfolio Single - Slider layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Small Gallery layout style - begin
+   ========================================================================== */
+.mkdf-portfolio-single-holder.mkdf-ps-small-gallery-layout .mkdf-ps-image-holder {
+  width: 100%;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-small-gallery-layout .mkdf-ps-image-holder .mkdf-ps-image {
+  float: left;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-small-gallery-layout .mkdf-ps-image-holder .mkdf-ps-image a:hover:after {
+  opacity: 1;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-small-gallery-layout .mkdf-ps-image-holder .mkdf-ps-image a:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-small-gallery-layout .mkdf-ps-content-item {
+  margin: 0 0 30px;
+}
+
+/* ==========================================================================
+   Portfolio Single - Small Gallery layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Small Images layout style - begin
+   ========================================================================== */
+.mkdf-portfolio-single-holder.mkdf-ps-small-images-layout .mkdf-ps-image-holder .mkdf-ps-image {
+  margin: 0 0 30px;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-small-images-layout .mkdf-ps-content-item {
+  margin: 0 0 30px;
+}
+
+/* ==========================================================================
+   Portfolio Single - Small Images layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Small Masonry layout style - begin
+   ========================================================================== */
+.mkdf-portfolio-single-holder.mkdf-ps-small-masonry-layout .mkdf-ps-image-holder .mkdf-ps-image-inner {
+  opacity: 0;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-small-masonry-layout .mkdf-ps-content-item {
+  margin: 0 0 30px;
+}
+
+/* ==========================================================================
+   Portfolio Single - Small Masonry layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single - Small Slider layout style - begin
+   ========================================================================== */
+.mkdf-portfolio-single-holder.mkdf-ps-small-slider-layout .mkdf-ps-image-holder {
+  margin: 0 0 30px;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-small-slider-layout .mkdf-ps-image-holder .mkdf-ps-image-inner {
+  visibility: hidden;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-small-slider-layout .mkdf-ps-image-holder .mkdf-ps-image img {
+  width: 100%;
+}
+
+.mkdf-portfolio-single-holder.mkdf-ps-small-slider-layout .mkdf-ps-content-item {
+  margin: 0 0 30px;
+}
+
+/* ==========================================================================
+   Portfolio Single - Small Slider layout style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single navigation style - begin
+   ========================================================================== */
+.mkdf-ps-navigation {
+  position: relative;
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  margin: 60px 0 0;
+  clear: both;
+  box-sizing: border-box;
+}
+
+.mkdf-ps-full-width-custom-layout .mkdf-ps-navigation {
+  padding: 0 40px;
+}
+
+.mkdf-ps-navigation .mkdf-ps-prev,
+.mkdf-ps-navigation .mkdf-ps-next {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 49%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mkdf-ps-navigation .mkdf-ps-prev a,
+.mkdf-ps-navigation .mkdf-ps-next a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 46px;
+  line-height: 55px;
+}
+
+.mkdf-ps-navigation .mkdf-ps-prev a .mkdf-ps-nav-mark,
+.mkdf-ps-navigation .mkdf-ps-next a .mkdf-ps-nav-mark {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mkdf-ps-navigation .mkdf-ps-prev a .mkdf-ps-nav-mark:before,
+.mkdf-ps-navigation .mkdf-ps-next a .mkdf-ps-nav-mark:before {
+  display: block;
+  line-height: inherit;
+}
+
+.mkdf-ps-navigation .mkdf-ps-prev a .mkdf-ps-nav-mark {
+  left: 0;
+}
+
+.mkdf-ps-navigation .mkdf-ps-next {
+  text-align: right;
+}
+
+.mkdf-ps-navigation .mkdf-ps-next a .mkdf-ps-nav-mark {
+  right: 0;
+}
+
+/* ==========================================================================
+   Portfolio Single navigation style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Single navigation style - begin
+   ========================================================================== */
+.mkdf-ps-related-posts-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 25px 0 0;
+  clear: both;
+}
+
+.mkdf-ps-related-posts-holder > h4 {
+  margin: 0 0 45px;
+}
+
+.mkdf-ps-related-posts-holder .mkdf-ps-related-posts-holder-inner {
+  margin: 0 -15px;
+}
+
+.mkdf-ps-related-posts-holder .mkdf-ps-related-post {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-ps-related-posts-holder .mkdf-ps-related-post {
+    width: 50%;
+  }
+  .mkdf-ps-related-posts-holder .mkdf-ps-related-post:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .mkdf-ps-related-posts-holder .mkdf-ps-related-post {
+    width: 100%;
+  }
+}
+
+.mkdf-ps-related-posts-holder .mkdf-ps-related-post > a {
+  position: absolute;
+  display: block;
+  width: calc(100% - 30px);
+  height: 100%;
+  top: 0;
+  left: 15px;
+  opacity: 0;
+}
+
+.mkdf-ps-related-posts-holder .mkdf-ps-related-post:hover .mkdf-ps-related-text {
+  opacity: 1;
+}
+
+.mkdf-ps-related-posts-holder .mkdf-related-nav-holder {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mkdf-ps-related-posts-holder .mkdf-related-nav-holder > span {
+  cursor: pointer;
+  color: #000;
+}
+
+.mkdf-ps-related-posts-holder .mkdf-related-nav-holder .mkdf-ps-back-btn {
+  display: inline-block;
+  vertical-align: initial;
+  margin: 0 5px;
+}
+
+.mkdf-ps-related-posts-holder .mkdf-related-nav-holder .mkdf-ps-back-btn a {
+  position: relative;
+  display: inline-block;
+  top: -1px;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.mkdf-ps-related-posts-holder .mkdf-related-nav-holder .mkdf-ps-back-btn a:hover {
+  color: #6534ff;
+}
+
+.mkdf-ps-related-posts-holder .mkdf-ps-related-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-ps-related-posts-holder .mkdf-ps-related-image a, .mkdf-ps-related-posts-holder .mkdf-ps-related-image img {
+  display: block;
+}
+
+.mkdf-ps-related-posts-holder .mkdf-ps-related-text {
+  position: absolute;
+  display: block;
+  width: calc(100% - 30px);
+  height: 100%;
+  top: 0;
+  left: 15px;
+  background-color: rgba(219, 252, 0, 0.8);
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.mkdf-ps-related-posts-holder .mkdf-ps-related-text .mkdf-ps-related-text-holder {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.mkdf-ps-related-posts-holder .mkdf-ps-related-text .mkdf-ps-related-text-holder .mkdf-ps-related-text-holder-inner {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.mkdf-ps-related-posts-holder .mkdf-ps-related-text .mkdf-ps-related-title {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Portfolio Single navigation style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Category List shortcode style - begin
+   ========================================================================== */
+.mkdf-portfolio-category-list-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Article Global Style - begin *****/
+  /***** Article Global Style - end *****/
+}
+
+.mkdf-portfolio-category-list-holder article {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.touch .mkdf-portfolio-category-list-holder article {
+  cursor: pointer;
+}
+
+.mkdf-portfolio-category-list-holder article:hover .mkdf-pcli-text-holder {
+  opacity: 1;
+}
+
+.mkdf-portfolio-category-list-holder article .mkdf-pcl-item-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.mkdf-portfolio-category-list-holder article .mkdf-pcli-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-portfolio-category-list-holder article .mkdf-pcli-image img {
+  display: block;
+  width: 100%;
+}
+
+.mkdf-portfolio-category-list-holder article .mkdf-pcli-text-holder {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.mkdf-portfolio-category-list-holder article .mkdf-pcli-text-wrapper {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.mkdf-portfolio-category-list-holder article .mkdf-pcli-text {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-portfolio-category-list-holder article .mkdf-pcli-title {
+  margin: 0;
+  color: #fff;
+}
+
+.mkdf-portfolio-category-list-holder article .mkdf-pcli-excerpt {
+  margin: 3px 0 0;
+  color: #fff;
+}
+
+.mkdf-portfolio-category-list-holder article .mkdf-pcli-link {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.mkdf-portfolio-category-list-holder:not(.mkdf-pcl-one-column) article {
+  float: left;
+}
+
+.mkdf-portfolio-category-list-holder.mkdf-pcl-two-columns article {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .mkdf-portfolio-category-list-holder.mkdf-pcl-two-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.mkdf-portfolio-category-list-holder.mkdf-pcl-three-columns article {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .mkdf-portfolio-category-list-holder.mkdf-pcl-three-columns article:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.mkdf-portfolio-category-list-holder.mkdf-pcl-four-columns article {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .mkdf-portfolio-category-list-holder.mkdf-pcl-four-columns article:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.mkdf-portfolio-category-list-holder.mkdf-pcl-five-columns article {
+  width: 20%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .mkdf-portfolio-category-list-holder.mkdf-pcl-five-columns article:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Category List shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio shortcode style - begin
+   ========================================================================== */
+.mkdf-portfolio-list-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  /***** Article Global Style - begin *****/
+  /***** Article Global Style - end *****/
+  /***** Specific Global Style - begin *****/
+  /***** Specific Global Style - end *****/
+  /***** Portfolio Types - begin *****/
+  /***** Portfolio Types - end *****/
+  /***** Additional Features - begin *****/
+  /***** Additional Features - end *****/
+}
+
+.mkdf-portfolio-list-holder article {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.touch .mkdf-portfolio-list-holder article {
+  cursor: pointer;
+}
+
+.mkdf-portfolio-list-holder article .mkdf-pl-item-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-portfolio-list-holder article .mkdf-pli-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-portfolio-list-holder article .mkdf-pli-image img {
+  display: block;
+  width: 100%;
+}
+
+.mkdf-portfolio-list-holder article .mkdf-pli-link {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.mkdf-portfolio-list-holder article .mkdf-pli-text-wrapper {
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.mkdf-portfolio-list-holder article .mkdf-pli-text {
+  position: relative;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-portfolio-list-holder article .mkdf-pli-text .mkdf-pli-title {
+  margin: 0;
+}
+
+.mkdf-portfolio-list-holder article .mkdf-pli-text .mkdf-pli-category-holder {
+  position: relative;
+  display: block;
+  margin: 3px 0 0;
+}
+
+.mkdf-portfolio-list-holder article .mkdf-pli-text .mkdf-pli-category-holder a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 6px 0 0;
+  margin: 0 3px 0 0;
+  z-index: 8;
+  font-size: 17px;
+  font-style: italic;
+}
+
+.mkdf-portfolio-list-holder article .mkdf-pli-text .mkdf-pli-category-holder a:after {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  content: '/';
+  color: inherit;
+  font-size: 12px;
+  line-height: inherit;
+}
+
+.mkdf-portfolio-list-holder article .mkdf-pli-text .mkdf-pli-category-holder a:last-child {
+  margin: 0;
+  padding: 0;
+}
+
+.mkdf-portfolio-list-holder article .mkdf-pli-text .mkdf-pli-category-holder a:last-child:after {
+  display: none;
+}
+
+.mkdf-portfolio-list-holder article .mkdf-pli-text .mkdf-pli-excerpt {
+  margin: 3px 0 0;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-has-shadow article .mkdf-pli-image {
+  box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.09);
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-has-filter .mkdf-pl-inner {
+  overflow: hidden;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-no-content .mkdf-pli-text-holder {
+  display: none;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery:not(.mkdf-pl-one-column) article {
+  float: left;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-two-columns article {
+  width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-two-columns article:nth-child(2n+1) {
+    clear: both;
+  }
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-three-columns article {
+  width: 33.33333%;
+}
+
+@media only screen and (min-width: 1025px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-three-columns article:nth-child(3n+1) {
+    clear: both;
+  }
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-four-columns article {
+  width: 25%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-four-columns article:nth-child(4n+1) {
+    clear: both;
+  }
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-five-columns article {
+  width: 20%;
+}
+
+@media only screen and (min-width: 1281px) {
+  .mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-pl-five-columns article:nth-child(5n+1) {
+    clear: both;
+  }
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery.mkdf-no-space article .mkdf-pli-image img {
+  -webkit-transform: scale(1.005);
+  -moz-transform: scale(1.005);
+  transform: scale(1.005);
+  backface-visibility: hidden;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-masonry .mkdf-pl-inner {
+  opacity: 0;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-masonry article,
+.mkdf-portfolio-list-holder.mkdf-pl-masonry .mkdf-pl-grid-sizer {
+  width: 100%;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-masonry .mkdf-pl-grid-gutter {
+  width: 0;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-two-columns article,
+.mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-two-columns .mkdf-pl-grid-sizer {
+  width: 50%;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-two-columns article.mkdf-pl-masonry-large-width, .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-two-columns article.mkdf-pl-masonry-large-width-height {
+  width: 100%;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-three-columns article,
+.mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-three-columns .mkdf-pl-grid-sizer {
+  width: 33.33333%;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-three-columns article.mkdf-pl-masonry-large-width, .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-three-columns article.mkdf-pl-masonry-large-width-height {
+  width: 66.66667%;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-four-columns article,
+.mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-four-columns .mkdf-pl-grid-sizer {
+  width: 25%;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-four-columns article.mkdf-pl-masonry-large-width, .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-four-columns article.mkdf-pl-masonry-large-width-height {
+  width: 50%;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-five-columns article,
+.mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-five-columns .mkdf-pl-grid-sizer {
+  width: 20%;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-five-columns article.mkdf-pl-masonry-large-width, .mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-five-columns article.mkdf-pl-masonry-large-width-height {
+  width: 40%;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-images-fixed article .mkdf-pl-item-inner {
+  height: 100%;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-images-fixed article .mkdf-pli-image {
+  height: 100%;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-masonry.mkdf-pl-images-fixed article .mkdf-pli-image img {
+  height: 100%;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-has-animation article {
+  opacity: 0;
+  -webkit-transform: translateY(80px);
+  -moz-transform: translateY(80px);
+  transform: translateY(80px);
+  -webkit-transition: opacity 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04), transform 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04);
+  -moz-transition: opacity 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04), transform 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04);
+  transition: opacity 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04), transform 0.8s cubic-bezier(0.34, 0.52, 0.57, 1.04);
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-has-animation article.mkdf-item-show {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-has-animation article.mkdf-item-show.mkdf-item-shown {
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.touch .mkdf-portfolio-list-holder.mkdf-pl-has-animation article {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   Portfolio shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio filter style - begin
+   ========================================================================== */
+.mkdf-pl-filter-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 0 0 30px;
+  text-align: center;
+}
+
+.mkdf-pl-filter-holder ul {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mkdf-pl-filter-holder ul li {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 10px;
+  padding: 0 22px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1440px) {
+  .mkdf-pl-filter-holder ul li {
+    padding: 0 16px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mkdf-pl-filter-holder ul li {
+    padding: 0 10px;
+  }
+}
+
+.mkdf-pl-filter-holder ul li span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  white-space: nowrap;
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.mkdf-pl-filter-holder ul li.mkdf-pl-current span, .mkdf-pl-filter-holder ul li:hover span {
+  color: #6534ff;
+}
+
+/* ==========================================================================
+   Portfolio filter style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio standard pagination style - begin
+   ========================================================================== */
+.mkdf-portfolio-list-holder.mkdf-pl-pag-standard .mkdf-pl-inner {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-pag-standard.mkdf-pl-pag-standard-animate .mkdf-pl-inner {
+  opacity: 0;
+}
+
+.mkdf-pl-standard-pagination {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 20px 0 0;
+  clear: both;
+}
+
+.mkdf-pl-standard-pagination ul {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.mkdf-pl-standard-pagination ul li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 12px;
+  padding: 0;
+}
+
+.mkdf-pl-standard-pagination ul li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+.mkdf-pl-standard-pagination ul li.mkdf-pl-pag-active a {
+  color: #dbfc00;
+}
+
+.mkdf-pl-standard-pagination ul li.mkdf-pl-pag-prev, .mkdf-pl-standard-pagination ul li.mkdf-pl-pag-next {
+  position: absolute;
+  top: 0;
+}
+
+.mkdf-pl-standard-pagination ul li.mkdf-pl-pag-prev a, .mkdf-pl-standard-pagination ul li.mkdf-pl-pag-next a {
+  font-size: 30px;
+  -webkit-transition: color 0.2s ease-out, opacity 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, opacity 0.2s ease-out;
+  transition: color 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.mkdf-pl-standard-pagination ul li.mkdf-pl-pag-prev a span, .mkdf-pl-standard-pagination ul li.mkdf-pl-pag-next a span {
+  display: block;
+  line-height: inherit;
+}
+
+.mkdf-pl-standard-pagination ul li.mkdf-pl-pag-prev a span:before, .mkdf-pl-standard-pagination ul li.mkdf-pl-pag-next a span:before {
+  display: block;
+  line-height: inherit;
+}
+
+.mkdf-pl-standard-pagination ul li.mkdf-pl-pag-prev {
+  left: 0;
+}
+
+.mkdf-pl-standard-pagination ul li.mkdf-pl-pag-prev a {
+  opacity: 0;
+}
+
+.mkdf-pl-standard-pagination ul li.mkdf-pl-pag-next {
+  right: 0;
+}
+
+.mkdf-pl-standard-pagination ul li.mkdf-pl-pag-next a {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   Portfolio standard pagination style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio load more pagination style - begin
+   ========================================================================== */
+.mkdf-pl-load-more-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-pl-load-more-holder .mkdf-pl-load-more {
+  margin: 20px 0 0;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Portfolio load more pagination style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio loading element style - begin
+   ========================================================================== */
+.mkdf-pl-loading {
+  position: relative;
+  display: none;
+  width: 100%;
+  margin: 40px 0 20px;
+  color: #000;
+  text-align: center;
+}
+
+.mkdf-pl-loading.mkdf-filter-trigger {
+  position: absolute;
+  top: 250px;
+  left: 0;
+}
+
+.mkdf-pl-loading.mkdf-standard-pag-trigger {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.mkdf-pl-has-filter .mkdf-pl-loading.mkdf-standard-pag-trigger {
+  top: 150px;
+}
+
+.mkdf-pl-loading.mkdf-showing {
+  display: block;
+}
+
+.mkdf-pl-loading > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  margin: 0 3px;
+  background-color: #000;
+  border-radius: 100%;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  -moz-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.mkdf-pl-loading .mkdf-pl-loading-bounce1 {
+  -webkit-animation-delay: -0.32s;
+  -moz-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.mkdf-pl-loading .mkdf-pl-loading-bounce2 {
+  -webkit-animation-delay: -0.16s;
+  -moz-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -moz-transform: scale(0);
+  }
+  40% {
+    -moz-transform: scale(1);
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* ==========================================================================
+   Portfolio loading element style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - begin
+   ========================================================================== */
+.mkdf-portfolio-list-holder.mkdf-pl-gallery-overlay.mkdf-pl-has-shadow .mkdf-pl-item-inner {
+  box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.09);
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery-overlay article:hover .mkdf-pli-text-holder {
+  opacity: 1;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery-overlay article:hover .mkdf-pli-text-holder .mkdf-pli-text-wrapper {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery-overlay article .mkdf-pl-item-inner {
+  overflow: hidden;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery-overlay article .mkdf-pli-text .mkdf-pli-title,
+.mkdf-portfolio-list-holder.mkdf-pl-gallery-overlay article .mkdf-pli-text .mkdf-pli-excerpt {
+  color: #000;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery-overlay article .mkdf-pli-text .mkdf-pli-category-holder a {
+  color: #3d3d3d;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery-overlay article .mkdf-pli-text .mkdf-pli-category-holder a:hover {
+  color: #000;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery-overlay .mkdf-pli-text-holder {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background-color: rgba(219, 252, 0, 0.8);
+  opacity: 0;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery-overlay .mkdf-pli-text-holder .mkdf-pli-text-wrapper {
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  -moz-transition: -moz-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  -webkit-transform: translate3d(0, 10%, 0);
+  -moz-transform: translate3d(0, 10%, 0);
+  transform: translate3d(0, 10%, 0);
+}
+
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Slide From Image Bottom style - begin
+   ========================================================================== */
+.mkdf-portfolio-list-holder.mkdf-pl-gallery-slide-from-image-bottom.mkdf-pl-has-shadow .mkdf-pl-item-inner {
+  box-shadow: 0 0 4.85px 0.15px rgba(0, 0, 0, 0.09);
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery-slide-from-image-bottom article:hover .mkdf-pli-text-holder {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery-slide-from-image-bottom article:hover .mkdf-pli-text-wrapper {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery-slide-from-image-bottom article .mkdf-pl-item-inner {
+  overflow: hidden;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery-slide-from-image-bottom .mkdf-pli-text-holder {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  padding: 15px 20px 10px;
+  background-color: #fff;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  -moz-transition: -moz-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-gallery-slide-from-image-bottom .mkdf-pli-text-wrapper {
+  -webkit-transform: translateY(-200%);
+  -moz-transform: translateY(-200%);
+  transform: translateY(-200%);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  -moz-transition: -moz-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+}
+
+@supports (-ms-ime-align: auto) {
+  .mkdf-portfolio-list-holder.mkdf-pl-gallery-slide-from-image-bottom article .mkdf-pl-item-inner {
+    overflow: visible;
+  }
+}
+
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Slide From Image Bottom style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Item Layout - Standard Shader style - begin
+   ========================================================================== */
+.mkdf-portfolio-list-holder.mkdf-pl-standard-shader article:hover .mkdf-pli-image:after {
+  opacity: 1;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-standard-shader article .mkdf-pli-image:after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-standard-shader article .mkdf-pli-link {
+  z-index: 2;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-standard-shader .mkdf-pli-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 20px 0 0;
+}
+
+/* ==========================================================================
+   Portfolio Item Layout - Standard Shader style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Item Layout - Standard Switch Images style - begin
+   ========================================================================== */
+.mkdf-portfolio-list-holder.mkdf-pl-standard-switch-images article .mkdf-pli-image img {
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  will-change: opacity;
+  -webkit-filter: blur();
+  filter: blur();
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-standard-switch-images article .mkdf-pli-image img:nth-child(1) {
+  opacity: 1;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-standard-switch-images article .mkdf-pli-image img:nth-child(2) {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-standard-switch-images article.mkdf-pl-has-switch-image:hover .mkdf-pli-image img:nth-child(1) {
+  opacity: 1;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-standard-switch-images article.mkdf-pl-has-switch-image:hover .mkdf-pli-image img:nth-child(2) {
+  opacity: 1;
+}
+
+.mkdf-portfolio-list-holder.mkdf-pl-standard-switch-images .mkdf-pli-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 20px 0 0;
+}
+
+/* ==========================================================================
+   Portfolio Item Layout - Standard Switch Images style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Project Info shortcode style - begin
+   ========================================================================== */
+.mkdf-portfolio-project-info {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mkdf-portfolio-project-info .mkdf-ppi-label {
+  margin: 0;
+  padding: 0;
+}
+
+.mkdf-portfolio-project-info > div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mkdf-portfolio-project-info > div a {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px 0 0;
+}
+
+.mkdf-portfolio-project-info > div a:last-child {
+  margin: 0;
+}
+
+.mkdf-portfolio-project-info .mkdf-ppi-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.mkdf-portfolio-project-info .mkdf-ppi-image {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.mkdf-portfolio-project-info .mkdf-ppi-image img {
+  display: block;
+}
+
+/* ==========================================================================
+   Portfolio Project Info shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Portfolio Slider shortcode style - begin
+   ========================================================================== */
+.mkdf-portfolio-slider-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-portfolio-slider-holder .mkdf-pl-inner {
+  margin: 0 !important;
+}
+
+.mkdf-portfolio-slider-holder article {
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  float: none !important;
+}
+
+.mkdf-portfolio-slider-holder .mkdf-portfolio-list-holder.mkdf-nav-light-skin .owl-nav .owl-prev,
+.mkdf-portfolio-slider-holder .mkdf-portfolio-list-holder.mkdf-nav-light-skin .owl-nav .owl-next {
+  color: #fff;
+}
+
+.mkdf-portfolio-slider-holder .mkdf-portfolio-list-holder.mkdf-nav-light-skin .owl-nav .owl-prev:hover,
+.mkdf-portfolio-slider-holder .mkdf-portfolio-list-holder.mkdf-nav-light-skin .owl-nav .owl-next:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.mkdf-portfolio-slider-holder .mkdf-portfolio-list-holder.mkdf-nav-dark-skin .owl-nav .owl-prev,
+.mkdf-portfolio-slider-holder .mkdf-portfolio-list-holder.mkdf-nav-dark-skin .owl-nav .owl-next {
+  color: #333;
+}
+
+.mkdf-portfolio-slider-holder .mkdf-portfolio-list-holder.mkdf-nav-dark-skin .owl-nav .owl-prev:hover,
+.mkdf-portfolio-slider-holder .mkdf-portfolio-list-holder.mkdf-nav-dark-skin .owl-nav .owl-next:hover {
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.mkdf-portfolio-slider-holder .mkdf-portfolio-list-holder.mkdf-pag-light-skin .owl-dots .owl-dot span {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.mkdf-portfolio-slider-holder .mkdf-portfolio-list-holder.mkdf-pag-light-skin .owl-dots .owl-dot.active span, .mkdf-portfolio-slider-holder .mkdf-portfolio-list-holder.mkdf-pag-light-skin .owl-dots .owl-dot:hover span {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.mkdf-portfolio-slider-holder .mkdf-portfolio-list-holder.mkdf-pag-dark-skin .owl-dots .owl-dot span {
+  background-color: rgba(51, 51, 51, 0.2);
+}
+
+.mkdf-portfolio-slider-holder .mkdf-portfolio-list-holder.mkdf-pag-dark-skin .owl-dots .owl-dot.active span, .mkdf-portfolio-slider-holder .mkdf-portfolio-list-holder.mkdf-pag-dark-skin .owl-dots .owl-dot:hover span {
+  background-color: rgba(51, 51, 51, 0.8);
+}
+
+.mkdf-portfolio-slider-holder .mkdf-portfolio-list-holder.mkdf-pag-on-slider .owl-nav .owl-prev,
+.mkdf-portfolio-slider-holder .mkdf-portfolio-list-holder.mkdf-pag-on-slider .owl-nav .owl-next {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.mkdf-portfolio-slider-holder .mkdf-portfolio-list-holder.mkdf-pag-on-slider .owl-dots {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Portfolio Slider shortcode style - end
+   ========================================================================== */
+/* ==========================================================================
+   Testimonials standard style - begin
+   ========================================================================== */
+.mkdf-testimonials-holder.mkdf-testimonials-standard {
+  text-align: center;
+  /* Light/Dark styles */
+}
+
+.mkdf-testimonials-holder.mkdf-testimonials-standard .mkdf-testimonial-image {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 25px 0 0;
+}
+
+.mkdf-testimonials-holder.mkdf-testimonials-standard .mkdf-testimonial-image img {
+  display: block;
+  margin: 0 auto;
+}
+
+.mkdf-testimonials-holder.mkdf-testimonials-standard .mkdf-testimonial-title {
+  margin: 0;
+}
+
+.mkdf-testimonials-holder.mkdf-testimonials-standard .mkdf-separator {
+  width: 68px;
+  margin: 7px 0 21px;
+  border-bottom: 5px solid #dbfc00;
+}
+
+.mkdf-testimonials-holder.mkdf-testimonials-standard .mkdf-testimonial-author {
+  margin: 29px 0 0;
+}
+
+.mkdf-testimonials-holder.mkdf-testimonials-standard .mkdf-testimonial-text {
+  margin: 19px 0 0;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.mkdf-testimonials-holder.mkdf-testimonials-standard.mkdf-testimonials-light .mkdf-testimonial-title,
+.mkdf-testimonials-holder.mkdf-testimonials-standard.mkdf-testimonials-light .mkdf-testimonial-author {
+  color: #fff;
+}
+
+.mkdf-testimonials-holder.mkdf-testimonials-standard.mkdf-testimonials-light .mkdf-testimonial-text {
+  color: #a5a5a5;
+}
+
+.mkdf-testimonials-holder.mkdf-testimonials-standard.mkdf-testimonials-light .owl-dots .owl-dot span {
+  border: 2px solid #fff;
+}
+
+.mkdf-testimonials-holder.mkdf-testimonials-standard.mkdf-testimonials-light .owl-dots .owl-dot:hover span, .mkdf-testimonials-holder.mkdf-testimonials-standard.mkdf-testimonials-light .owl-dots .owl-dot.active span {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.mkdf-testimonials-holder.mkdf-testimonials-standard.mkdf-testimonials-light .owl-nav .owl-next,
+.mkdf-testimonials-holder.mkdf-testimonials-standard.mkdf-testimonials-light .owl-nav .owl-prev {
+  color: #fff;
+}
+
+/* ==========================================================================
+   Testimonials standard style - end
+   ========================================================================== */
+/* ==========================================================================
+   Testimonials shortcode style - begin
+   ========================================================================== */
+.mkdf-testimonials-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-testimonials-holder .mkdf-testimonials:not(.mkdf-grid),
+.mkdf-testimonials-holder .mkdf-testimonial-content:not(.mkdf-grid),
+.mkdf-testimonials-holder .mkdf-testimonial-text-holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.mkdf-testimonials-holder .mkdf-testimonial-content.mkdf-grid {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.mkdf-testimonials-holder .mkdf-testimonials.mkdf-grid {
+  position: static;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+}
+
+.mkdf-testimonials-holder .mkdf-testimonials {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mkdf-testimonials-holder .mkdf-testimonial-image img {
+  width: auto !important;
+  border-radius: 5em;
+}
+
+/* ==========================================================================
+   Testimonials shortcode style - end
+   ========================================================================== */
+
+/*# sourceMappingURL=../../../../plugins/klippe-core/assets/css/custom-post-types-map.css.map */

@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Testimonials standard style - begin
+   ========================================================================== */
+
+.mkdf-testimonials-holder {
+    
+    &.mkdf-testimonials-standard {
+        text-align: center;
+
+        .mkdf-testimonial-image {
+            @include mkdfRelativeHolderLayout();
+            margin: 25px 0 0;
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .mkdf-testimonial-title {
+            margin: 0;
+        }
+
+        .mkdf-separator {
+            width: 68px;
+            margin: 7px 0 21px;
+            border-bottom: 5px solid $first-main-color;
+        }
+
+        .mkdf-testimonial-author {
+            margin: 29px 0 0;
+        }
+
+        .mkdf-testimonial-text {
+            margin: 19px 0 0;
+            font-size: 20px;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        /* Light/Dark styles */
+        &.mkdf-testimonials-light {
+            
+            .mkdf-testimonial-title,
+            .mkdf-testimonial-author {
+                color: #fff;
+            }
+
+            .mkdf-testimonial-text {
+                color: #a5a5a5;
+            }
+
+            .owl-dots {
+                
+                .owl-dot {
+                    
+                    span {
+                        border: 2px solid #fff;
+                    }
+                    
+                    &:hover,
+                    &.active {
+
+                        span {
+                            background-color: #fff;
+                            border-color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .owl-nav .owl-next,
+            .owl-nav .owl-prev {
+                color: #fff;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Testimonials standard style - end
+   ========================================================================== */

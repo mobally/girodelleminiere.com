@@ -1,0 +1,192 @@
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+
+.mkdf-banner-holder {
+    @include mkdfRelativeHolderLayout();
+	
+	.touch & {
+		cursor: pointer;
+	}
+	
+	&.mkdf-visible-on-hover {
+		
+		&:hover {
+			
+			.mkdf-banner-text-holder {
+				opacity: 1;
+			}
+		}
+		
+		.mkdf-banner-text-holder {
+			opacity: 0;
+			@include mkdfTransition(opacity .2s ease-out);
+		}
+	}
+	
+	&.mkdf-disabled {
+		
+		.mkdf-banner-text-holder {
+			display: none;
+		}
+	}
+	
+	&.mkdf-banner-info-centered {
+		
+		.mkdf-banner-text-holder {
+			padding: 70px 20px;
+			text-align: center;
+
+			.mkdf-banner-text-inner {
+				vertical-align: middle;
+			}
+		}
+
+		.mkdf-banner-text-outer {
+			@include mkdfTransitionTransform(.25s ease-out);
+			@include mkdfTransform(translate3d(0,10%,0));
+		}
+
+		&:hover {
+			.mkdf-banner-text-outer {
+				@include mkdfTransform(translate3d(0,0%,0));
+			}
+		}
+	}
+	
+	.mkdf-banner-image {
+		@include mkdfRelativeHolderLayout();
+
+		&.shadow-enabled{
+			img{
+				-webkit-box-shadow: 0 0 17.46px 0.54px rgba(0, 0, 0, 0.2);
+				-moz-box-shadow: 0 0 17.46px 0.54px rgba(0, 0, 0, 0.2);
+				box-shadow: 0 0 17.46px 0.54px rgba(0, 0, 0, 0.2);
+				@include mkdfTransition(box-shadow .2s ease-out);
+			}
+		}
+		
+		img {
+			display: block;
+		}
+	}
+
+	&:hover {
+		.mkdf-banner-image { 
+			&.shadow-enabled{ 
+				img{ 
+					-webkit-box-shadow: 0 0 25px 1px rgba(0,0,0,.3);
+					-moz-box-shadow: 0 0 25px 1px rgba(0,0,0,.3);
+					box-shadow: 0 0 25px 1px rgba(0,0,0,.3);
+				}
+			}
+		}
+	}
+	
+	.mkdf-banner-text-holder {
+		@include mkdfAbsoluteHolderLayout();
+		padding: 25px 30px;
+		box-sizing: border-box;
+		
+		@include ipad-portrait {
+			padding: 25px;
+		}
+	}
+	
+	.mkdf-banner-text-outer {
+		@include mkdfTableLayout();
+	}
+	
+	.mkdf-banner-text-inner {
+		position: relative;
+		display: table-cell;
+		height: 100%;
+		width: 100%;
+		vertical-align: top;
+	}
+	
+	.mkdf-banner-subtitle {
+		margin: 0 0 6px;
+		color: $default-heading-color;
+	}
+	
+	.mkdf-banner-title {
+		margin: 0;
+		color: $default-text-color;
+		
+		.mkdf-banner-title-light {
+			font-weight: 300;
+		}
+	}
+	
+	.mkdf-banner-link-text {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		margin: 11px 0 0;
+		color: #fff;
+		line-height: 1em;
+		z-index: 2;
+		@include mkdfTransform(translateZ(0));
+		
+		&:hover {
+			
+			.mkdf-banner-link-hover {
+				width: 100%;
+			}
+		}
+		
+		.mkdf-banner-link-original {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+			
+			span {
+				color: inherit;
+			}
+		}
+		
+		.mkdf-banner-link-hover {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0.1%;
+			height: 100%;
+			display: inline-block;
+			vertical-align: top;
+			white-space: nowrap;
+			overflow: hidden;
+			@include mkdfTransition(width .4s ease-in-out);
+			
+			span {
+				color: $first-main-color;
+			}
+		}
+		
+		.mkdf-banner-link-icon,
+		.mkdf-banner-link-label {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+		}
+		
+		.mkdf-banner-link-icon {
+			margin: 0 2px 0 0;
+			font-size: 15px;
+		}
+		
+		.mkdf-banner-link-label {
+			font-size: 14px;
+			line-height: inherit;
+		}
+	}
+
+	.mkdf-banner-link {
+		@include mkdfAbsoluteHolderLayout();
+		z-index: 1;
+	}
+}
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */

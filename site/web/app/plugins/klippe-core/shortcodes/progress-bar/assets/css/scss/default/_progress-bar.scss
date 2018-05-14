@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Progress Bar shortcode style - begin
+   ========================================================================== */
+
+.mkdf-progress-bar {
+    @include mkdfRelativeHolderLayout();
+    
+    .mkdf-pb-title-holder {
+        position: relative;
+        margin: 10px 0 12px;
+        
+        .mkdf-pb-title {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            z-index: 100;
+        }
+    }
+    
+    .mkdf-pb-content-holder {
+        position: relative;
+        height: 4px;
+        background-color: #ebebeb;
+        
+        .mkdf-pb-content {
+            height: 4px;
+            max-width: 100%;
+            background-color: $first-main-color;
+            overflow: visible !important;
+            position: relative;
+        }
+
+        .mkdf-pb-percent {
+            position: absolute;
+            right: 0;
+            bottom: 13px;
+            width: auto;
+            display: inline-block;
+            vertical-align: middle;
+            z-index: 10;
+            font-size: 19px;
+            font-weight: 800;
+            font-style: italic;
+            font-family: $default-heading-font;
+            color: $default-heading-color;
+
+            &:after {
+                content: '%';
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Progress Bar shortcode style - end
+   ========================================================================== */

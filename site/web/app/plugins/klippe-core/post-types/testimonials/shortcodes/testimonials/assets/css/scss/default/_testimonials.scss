@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Testimonials shortcode style - begin
+   ========================================================================== */
+
+.mkdf-testimonials-holder {
+    @include mkdfRelativeHolderLayout();
+
+    .mkdf-testimonials:not(.mkdf-grid),
+    .mkdf-testimonial-content:not(.mkdf-grid),
+    .mkdf-testimonial-text-holder {
+        @include mkdfRelativeHolderLayout();
+    }
+
+    .mkdf-testimonial-content.mkdf-grid {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 10%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .mkdf-testimonials.mkdf-grid {
+        position: static;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0;
+    }
+
+    .mkdf-testimonials {
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .mkdf-testimonial-image {
+
+        img {
+            width: auto !important;
+            border-radius: 5em;
+        }
+    }
+}
+/* ==========================================================================
+   Testimonials shortcode style - end
+   ========================================================================== */

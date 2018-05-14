@@ -1,0 +1,76 @@
+.mkdf-interactive-boxes-holder {
+    position: relative;
+    padding: 40px;
+    margin: 0 0 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 0 17.46px 0.54px rgba(0, 0, 0, 0.1);
+
+    .mkdf-ib-title {
+
+        margin: 0 0 12px;
+
+        &:after {
+            content: '';
+            position: relative;
+            display: block;
+            width: 62px;
+            height: 5px;
+            background-color: $first-main-color;
+            margin-top: 10px;
+        }
+    }
+
+    .mkdf-ib-link-text {
+        font-weight: 700;
+        color: $default-heading-color;
+
+        &:after {
+            content: "\f067";
+            position: relative;
+            top: -1px;
+            font-family: FontAwesome;
+            display: inline;
+            font-size: 10px;
+            margin-left: 2px;
+        }
+
+        &:hover {
+            color: $second-main-color;
+        }
+    }
+
+    .mkdf-ib-image {
+        position:relative;
+        margin-top: 18px;
+        overflow: hidden;
+
+        img {
+            display: block;
+            width: 100%;
+            backface-visibility: hidden;
+            @include mkdfTransform(scale(1));
+            @include mkdfTransitionTransform(.2s ease-out);
+        }
+
+        &:before {
+            content:"";
+            background:rgba(0,0,0,0.4);
+            opacity:0;
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            z-index:10;
+            pointer-events:none;
+            @include mkdfTransition(all 0.2s ease-out);
+        }
+
+        &:hover {
+            &:before { 
+                opacity:1;
+            }
+        }
+    }
+}

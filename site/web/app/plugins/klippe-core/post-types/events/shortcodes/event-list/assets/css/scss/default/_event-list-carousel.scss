@@ -1,0 +1,185 @@
+/* ==========================================================================
+   #Event List Carousel styles
+   ========================================================================== */
+.mkdf-event-list-holder.mkdf-event-list-carousel {
+    margin: 0 -17px;
+
+    .mkdf-event-list-holder-inner {
+    }
+
+    .mkdf-el-item {
+
+        .mkdf-el-item-inner {
+            padding: 0 17px;
+        }
+
+        .mkdf-el-item-image {
+
+            a {
+
+                &:before {
+                    content:"";
+                    background:rgba(0,0,0,0.4);
+                    opacity:0;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    width:100%;
+                    height:100%;
+                    @include mkdfTransition(all 0.2s ease-out);
+                }
+
+                &:hover {
+                    &:before {
+                        opacity:1;
+                    }
+                }
+            }
+
+            img {
+                vertical-align: middle;
+            }
+        }
+
+        .mkdf-el-item-image {
+            position: relative;
+        }
+
+        .mkdf-el-item-date {
+
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            padding: 10px 12px 12px;
+            background-color: $second-main-color;
+            font-family: $default-heading-font;
+            color: #fff;
+            text-align: center;
+            min-width: 80px;
+            box-sizing: border-box;
+
+            .mkdf-el-item-day{
+                font-size: 34px;
+                font-style: italic;
+                line-height: 1em;
+                font-weight: 800;
+            }
+
+            .mkdf-el-item-my {
+                .mkdf-el-item-month {
+                    display: block;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 15px;
+                    text-transform: lowercase;
+                    font-family: $default-text-font;
+                }
+            }
+        }
+
+        .mkdf-el-item-content {
+            padding: 25px 0 0;
+
+            .mkdf-el-item-location-title-holder {
+
+                .mkdf-el-item-title {
+                    margin: 0 0 8px;
+                }
+
+                .mkdf-el-item-time,
+                .mkdf-el-item-location {
+                    display: inline-block;
+                    font-family: $default-text-font;
+                    font-weight: 400;
+                    font-size: 15px;
+                }
+
+                .mkdf-el-item-location {
+                    &:before {
+                        content: "\f041";
+                        font-family: FontAwesome;
+                        display: inline;
+                        font-size: 16px;
+                        padding-right: 4px;
+                    }
+                }
+
+                .mkdf-el-item-time {
+
+                    padding-left: 5px;
+
+                    &:before {
+                        content: "\f073";
+                        font-family: FontAwesome;
+                        display: inline;
+                        font-size: 14px;
+                        padding-right: 4px;
+                    }
+                }
+
+                .mkdf-el-read-more-link {
+
+                    margin-top: 14px;
+
+                    a {
+                        font-weight: 700;
+                        font-size: 14px;
+
+                        &:hover {
+                            color: $first-main-color;
+                        }
+
+                        &:after {
+                            content: "\f067";
+                            font-family: FontAwesome;
+                            display: inline;
+                            font-size: 10px;
+                            padding-left: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .owl-nav {
+        .owl-prev {
+            left: -70px;
+        }
+
+        .owl-next {
+            right: -70px;
+        }
+    }
+
+    &.mkdf-event-list-light {
+        .mkdf-el-item {
+            .mkdf-el-item-content {
+                .mkdf-el-item-location-title-holder {
+                    .mkdf-el-item-title,
+                    .mkdf-el-read-more-link a {
+                        color: #fff;
+
+                        &:hover {
+                            color: $first-main-color;
+                        }
+                    }
+
+                    .mkdf-el-item-location,
+                    .mkdf-el-item-time {
+                        color: #c5c5c5;
+                    }
+                }
+            }
+        }
+
+        .owl-nav .owl-next,
+        .owl-nav .owl-prev {
+            color: #fff;
+
+            &:hover {
+                color: $first-main-color;
+            }
+        }
+    }
+}

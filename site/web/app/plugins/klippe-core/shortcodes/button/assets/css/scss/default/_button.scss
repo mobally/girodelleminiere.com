@@ -1,0 +1,224 @@
+/* ==========================================================================
+   Button shortcode style - begin
+   ========================================================================== */
+
+.mkdf-btn {
+    @include mkdfButtonDefaultStyle();
+    @include mkdfButtonMediumParams();
+    cursor: pointer;
+    
+    &.mkdf-btn-simple {
+        padding: 0 !important;
+        color: $default-heading-color;
+        background-color: transparent;
+        border: 0;
+        vertical-align: middle;
+        text-transform: lowercase;
+
+        .mkdf-btn-text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .mkdf-btn-hover-line { 
+            display:none !important;
+        }
+
+        &:not(.mkdf-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: $first-main-color !important;
+        }
+
+        &:not(.mkdf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: transparent !important;
+        }
+
+        &:not(.mkdf-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: transparent !important;
+        }
+    }
+
+    &.mkdf-btn-solid {
+        @include mkdfButtonSolidColor();
+
+        &:not(.mkdf-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: #fff !important;
+        }
+
+        &.mkdf-btn-hover-animation {
+
+            .mkdf-btn-hover-line { 
+                background-color:#fff;
+                z-index:10;
+            }
+
+            .mkdf-btn-text {
+                z-index:15;
+            }
+
+            &:not(.mkdf-btn-custom-hover-color):hover {
+                color: #000 !important;
+            }
+
+            &:not(.mkdf-btn-custom-border-hover):hover { 
+                border-color: $first-main-color !important;
+            }
+
+            &:not(.mkdf-btn-custom-hover-bg):hover {
+                background-color: $first-main-color !important;
+            }
+        }
+
+        &:not(.mkdf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: $default-heading-color !important;
+        }
+
+        &:not(.mkdf-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: $default-heading-color !important;
+        }
+    }
+
+    &.mkdf-btn-outline {
+	    @include mkdfButtonOutlineColor();
+
+        &:not(.mkdf-btn-custom-hover-color):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            color: $default-heading-color!important;
+        }
+
+        &.mkdf-btn-hover-animation:not(.mkdf-btn-custom-hover-bg):hover {
+            background-color: transparent !important;
+        }
+
+        &:not(.mkdf-btn-custom-hover-bg):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            background-color: $first-main-color !important;
+        }
+
+        &:not(.mkdf-btn-custom-border-hover):hover {
+            //important because of inline color attribute. :not is used so we don't have to use important in JS
+            border-color: $first-main-color !important;
+        }
+    }
+
+    &.mkdf-btn-hover-animation {
+        margin:0 !important; //margins are applied to button wrapper instead
+
+        .mkdf-btn-hover-line {
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background-color:$first-main-color;
+            transform-origin:bottom right;
+            z-index:-1;
+            @include mkdfTransitionTransform(0s ease-out);
+            @include mkdfTransform(translate3d(-135%,50%,0) rotate(60deg));
+        }
+
+        &:hover {
+            .mkdf-btn-hover-line {
+                @include mkdfTransitionTransform(.3s ease-out);
+                @include mkdfTransform(translate3d(25%,50%,0) rotate(80deg));
+            }
+        }
+    }
+
+    &.mkdf-btn-small {
+        @include mkdfButtonSmallParams();
+
+        &.mkdf-btn-simple{
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+
+    &.mkdf-btn-medium {
+        //same as default
+    }
+
+    &.mkdf-btn-large {
+        @include mkdfButtonLargeParams();
+    }
+
+    &.mkdf-btn-huge {
+        @include mkdfButtonHugeParams();
+    }
+
+    &.mkdf-btn-icon {
+
+        > i,
+        > span:not(.mkdf-btn-text) {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 0 0 2px;
+            font-size: 0.667em;
+            line-height: inherit;
+
+            &:before {
+                display: block;
+                line-height: inherit;
+            }
+        }
+    }
+
+    &.mkdf-btn-shadow{
+        -webkit-box-shadow: 0 3px 18px rgba($default-heading-color, .2);
+        -moz-box-shadow: 0 3px 18px rgba($default-heading-color, .2);
+        box-shadow: 0 3px 18px rgba($default-heading-color, .2);
+    }
+}
+
+.mkdf-btn-wrapper {
+    overflow:hidden;
+    display: inline-block;
+    padding:0 !important;
+
+    .ajax-loader {
+        width:0 !important;
+        margin:0 !important;
+    }
+
+    &.mkdf-btn-wrapper-nl {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 192px;
+
+        .mkdf-btn.mkdf-btn-solid {
+            border-width:1px;
+            width:192px;
+        }
+
+        input.wpcf7-form-control.wpcf7-submit:hover {
+            background-color:$first-main-color;
+            color:#000;
+        }
+    }
+
+    &.mkdf-btn-wrapper-ff { 
+        input.wpcf7-form-control.wpcf7-submit:not([disabled]):hover {
+            background-color:transparent !important;
+            color:#fff !important;
+        }
+    }
+}
+
+.rev_slider_wrapper .mkdf-btn.mkdf-btn-outline.mkdf-btn-hover-animation:not(.mkdf-btn-custom-hover-color):hover {
+    color:#fff !important;
+}
+
+.mkdf-parallax-row-holder .mkdf-btn-wrapper {
+    box-shadow: 0 3px 18px rgba(0,0,0,.2);
+}
+
+/* ==========================================================================
+   Button shortcode style - end
+   ========================================================================== */

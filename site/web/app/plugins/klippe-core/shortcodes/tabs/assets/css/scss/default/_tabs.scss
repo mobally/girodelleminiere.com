@@ -1,0 +1,246 @@
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+
+.mkdf-tabs {
+	@include mkdfRelativeHolderLayout();
+	
+	.mkdf-tabs-nav {
+		@include mkdfRelativeHolderLayout();
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		
+		li {
+			float: left;
+			margin: 0;
+			padding: 0;
+			
+			a {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				box-sizing: border-box;
+				font-size: 15px;
+				font-weight: 800;
+				font-style: italic;
+				font-family: "Open Sans",sans-serif;
+				text-transform: uppercase;
+				@include mkdfTransition(color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out);
+			}
+		}
+	}
+	
+	.mkdf-tab-container {
+        box-sizing: border-box;
+		@include mkdfRelativeHolderLayout();
+		
+		p {
+			margin: 0;
+		}
+	}
+	
+	&.mkdf-tabs-standard {
+		
+		.mkdf-tabs-nav {
+			
+			li {
+				
+				a {
+					padding: 7px 26px;
+					line-height: 25px;
+					letter-spacing: 1px;
+					color: #fff;
+					background-color: $default-heading-color;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $default-heading-color;
+					background-color: $first-main-color;
+				}
+			}
+		}
+		
+		.mkdf-tab-container {
+			margin: 20px 0 0;
+		}
+	}
+	
+	&.mkdf-tabs-boxed {
+		
+		.mkdf-tabs-nav {
+			
+			li {
+				margin: 0 12px 0 0;
+				
+				a {
+					padding: 7px 26px;
+					line-height: 25px;
+					letter-spacing: 1px;
+					color: #fff;
+					background-color: $default-heading-color;
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $default-heading-color;
+					background-color: $first-main-color;
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.mkdf-tab-container {
+			margin: 20px 0 0;
+		}
+	}
+	
+	&.mkdf-tabs-simple {
+		
+		.mkdf-tabs-nav {
+			
+			li {
+				margin: 0 50px 0 0;
+				
+				a {
+					padding: 13px 0 20px;
+					line-height: 26px;
+
+					&:after{
+						position: absolute;
+						content: '';
+						width: 54px;
+						height: 5px;
+						background-color: $first-main-color;
+						bottom: 0;
+						left: 0;
+						opacity: 0;
+						@include mkdfTransition(all .2s ease);
+					}
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $default-heading-color;
+
+					&:after{
+						opacity: 1;
+						@include mkdfTransition(all .3s ease);
+					}
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.mkdf-tab-container {
+			padding: 20px 0;
+		}
+	}
+	
+	&.mkdf-tabs-vertical {
+		display: table;
+		
+		.mkdf-tabs-nav {
+			display: table-cell;
+			vertical-align: top;
+			width: 140px;
+			height: 100%;
+			box-sizing: border-box;
+			
+			li {
+				display: block;
+				float: none;
+				margin: 0 0 24px;
+				
+				a {
+					line-height: 26px;
+					padding-bottom: 20px;
+
+					&:after{
+						position: absolute;
+						content: '';
+						width: 54px;
+						height: 5px;
+						background-color: $first-main-color;
+						bottom: 0;
+						left: 0;
+						opacity: 0;
+						@include mkdfTransition(all .2s ease);
+					}
+				}
+				
+				&.ui-state-active a,
+				&.ui-state-hover a {
+					color: $default-heading-color;
+
+					&:after{
+						opacity: 1;
+						@include mkdfTransition(all .3s ease);
+					}
+				}
+				
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		
+		.mkdf-tab-container {
+			display: table-cell;
+			vertical-align: top;
+			width: calc(100% - 140px);
+			height: 100%;
+			padding: 0 0 0 20px;
+			box-sizing: border-box;
+		}
+	}
+}
+
+.ui-widget-content {
+	padding: 0;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	border: 0;
+	border-radius: 0;
+
+    .ui-widget-header {
+	    font-size: inherit;
+	    line-height: inherit;
+	    font-weight: inherit;
+	    color: initial;
+	    background: none;
+	    border: 0;
+        border-radius: 0;
+    }
+	
+    .ui-tabs-nav {
+	    
+        li {
+	        position: initial;
+	        font-weight: inherit;
+	        color: inherit;
+	        background: initial;
+	        border: 0;
+	        border-radius: 0;
+        }
+    }
+
+    .ui-widget-content {
+	    color: inherit;
+	    background: none;
+	    border: 0;
+        border-radius: 0;
+    }
+}
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Portfolio Single navigation style - begin
+   ========================================================================== */
+
+.mkdf-ps-related-posts-holder {
+	@include mkdfRelativeHolderLayout();
+	margin: 25px 0 0;
+	clear: both;
+
+    > h4 {
+        margin: 0 0 45px;
+    }
+
+    .mkdf-ps-related-posts-holder-inner {
+        margin: 0 -15px;
+    }
+	
+	.mkdf-ps-related-post {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		float: left;
+		padding: 0 15px;
+		box-sizing: border-box;
+		
+		@include ipad-landscape {
+			width: 50%;
+			
+			&:nth-child(2n+1) {
+				clear: both;
+			}
+		}
+		
+		@include phone-landscape {
+			width: 100%;
+		}
+
+        > a {
+            position: absolute;
+            display: block;
+            width: calc(100% - 30px);
+            height: 100%;
+            top: 0;
+            left: 15px;
+            opacity: 0;
+        }
+
+        &:hover {
+            .mkdf-ps-related-text {
+                opacity: 1;
+            }
+        }
+	}
+
+    .mkdf-related-nav-holder {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        > span {
+            cursor: pointer;
+            color: $default-heading-color;
+        }
+
+        .mkdf-ps-back-btn {
+            display: inline-block;
+            vertical-align: initial;
+            margin: 0 5px;
+
+            a {
+                position: relative;
+                display: inline-block;
+                top: -1px;
+                margin: 0;
+                padding: 0;
+                vertical-align: middle;
+                cursor: pointer;
+                font-size: 12px;
+                line-height: 1;
+
+              &:hover {
+                color: $second-main-color;
+              }
+            }
+        }
+    }
+	
+	.mkdf-ps-related-image {
+		@include mkdfRelativeHolderLayout();
+		
+		a, img {
+			display: block;
+		}
+	}
+	
+	.mkdf-ps-related-text {
+        position: absolute;
+        display: block;
+        width: calc(100% - 30px);
+        height: 100%;
+        top: 0;
+        left: 15px;
+        background-color: rgba($first-main-color,.8);
+        opacity: 0;
+        @include mkdfTransition(all 0.2s ease-out);
+
+        .mkdf-ps-related-text-holder {
+            position: relative;
+            display: table;
+            table-layout: fixed;
+            height: 100%;
+            width: 100%;
+
+            .mkdf-ps-related-text-holder-inner {
+                position: relative;
+                display: table-cell;
+                height: 100%;
+                width: 100%;
+                vertical-align: middle;
+                text-align: center;
+            }
+        }
+		
+		.mkdf-ps-related-title {
+			margin: 0;
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Single navigation style - end
+   ========================================================================== */

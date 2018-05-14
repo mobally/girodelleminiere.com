@@ -1,0 +1,144 @@
+/* ==========================================================================
+   Call To Action shortcode style - begin
+   ========================================================================== */
+
+.mkdf-call-to-action-holder {
+    @include mkdfRelativeHolderLayout();
+	
+	.mkdf-cta-text-holder,
+	.mkdf-cta-button-holder {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+	.mkdf-cta-text-holder {
+		
+		h1, h2, h3, h4, h5, h6 {
+			margin: 0 0;
+			color: #fff;
+		}
+	}
+	
+	.mkdf-cta-button-holder {
+		
+		.mkdf-btn {
+			white-space: nowrap;
+		}
+	}
+
+	.mkdf-btn-wrapper {
+		padding: 13px !important;
+    	margin: -13px !important;
+    	overflow:hidden;
+
+    	.mkdf-btn {
+    		overflow:hidden;
+
+    		&.mkdf-btn-outline.mkdf-btn-hover-animation:hover .mkdf-btn-hover-line {
+    			z-index: 1;
+    		}
+    	}
+	}
+	
+	/***** Layout Style - begin *****/
+	
+	&.mkdf-normal-layout {
+		
+		.mkdf-cta-inner {
+			display: table;
+		}
+		
+		&:not(.mkdf-content-in-grid) {
+			
+			.mkdf-cta-inner {
+				width: 100%;
+			}
+		}
+		
+		.mkdf-cta-text-holder,
+		.mkdf-cta-button-holder {
+			display: table-cell;
+			box-sizing: border-box;
+		}
+		
+		.mkdf-cta-button-holder {
+			text-align: right;
+
+			.mkdf-cta-button{
+				&.enable-shadow{
+					.mkdf-btn{
+						overflow:hidden;
+						box-shadow: 0 0 17.46px 0.54px rgba(0, 0, 0, 0.2);
+					}
+				}
+			}
+		}
+	}
+	
+	&.mkdf-simple-layout {
+		
+		.mkdf-cta-inner {
+			text-align: center;
+		}
+		
+		.mkdf-cta-text-holder,
+		.mkdf-cta-button-holder {
+			width: 100%;
+		}
+		
+		.mkdf-cta-button-holder {
+			margin: 28px 0 0;
+		}
+	}
+	
+	/***** Layout Style - end *****/
+	
+	/***** Columns Space - begin *****/
+	
+	&.mkdf-two-halves-columns {
+		
+		.mkdf-cta-text-holder,
+		.mkdf-cta-button-holder {
+			width: 50%;
+		}
+	}
+	
+	&.mkdf-two-thirds-columns {
+		
+		.mkdf-cta-text-holder {
+			width: 66.66666666666667%;
+		}
+		
+		.mkdf-cta-button-holder {
+			width: 33.33333333333333%;
+		}
+	}
+	
+	&.mkdf-three-quarters-columns {
+		
+		.mkdf-cta-text-holder {
+			width: 75%;
+		}
+		
+		.mkdf-cta-button-holder {
+			width: 25%;
+		}
+	}
+	
+	&.mkdf-four-fifths-columns {
+		
+		.mkdf-cta-text-holder {
+			width: 80%;
+		}
+		
+		.mkdf-cta-button-holder {
+			width: 20%;
+		}
+	}
+	
+	/***** Columns Space - end *****/
+}
+/* ==========================================================================
+   Call To Action shortcode style - end
+   ========================================================================== */

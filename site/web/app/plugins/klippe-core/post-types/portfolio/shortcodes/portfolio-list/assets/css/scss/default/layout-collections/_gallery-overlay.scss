@@ -1,0 +1,71 @@
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - begin
+   ========================================================================== */
+
+.mkdf-portfolio-list-holder {
+	
+	&.mkdf-pl-gallery-overlay {
+		
+		&.mkdf-pl-has-shadow {
+			
+			.mkdf-pl-item-inner {
+				box-shadow: $default-box-shadow;
+			}
+		}
+		
+		article {
+			
+			&:hover {
+				
+				.mkdf-pli-text-holder {
+					opacity: 1;
+
+					.mkdf-pli-text-wrapper {
+						@include mkdfTransform(translate3d(0,0,0));
+					}
+				}
+			}
+			
+			.mkdf-pl-item-inner {
+				overflow: hidden;
+			}
+			
+			.mkdf-pli-text {
+				
+				.mkdf-pli-title,
+				.mkdf-pli-excerpt {
+					color: $default-heading-color;
+				}
+				
+				.mkdf-pli-category-holder {
+					
+					a {
+						color: $default-text-color;
+						
+						&:hover {
+							color: $default-heading-color;
+						}
+					}
+				}
+			}
+		}
+		
+		.mkdf-pli-text-holder {
+			@include mkdfAbsoluteHolderLayout();
+			padding: 20px;
+			background-color: rgba($first-main-color, 0.8);
+			opacity: 0;
+			text-align: center;
+			box-sizing: border-box;
+			@include mkdfTransition(opacity .2s ease-out);
+
+			.mkdf-pli-text-wrapper {
+				@include mkdfTransitionTransform(.25s ease-out);
+				@include mkdfTransform(translate3d(0,10%,0));
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - end
+   ========================================================================== */

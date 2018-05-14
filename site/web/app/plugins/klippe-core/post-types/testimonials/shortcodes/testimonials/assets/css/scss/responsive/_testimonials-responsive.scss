@@ -1,0 +1,28 @@
+@include ipad-landscape {
+    .mkdf-testimonials-holder {
+        .mkdf-testimonial-content {
+            &.mkdf-grid {
+                padding: 0 5%;
+            }
+        }
+    }
+}
+
+@include phone-landscape {
+    .mkdf-testimonials-holder {
+        &.mkdf-testimonials-standard {
+
+            .mkdf-testimonials {
+                padding: 0 25px;
+            }
+
+            .mkdf-testimonial-content.mkdf-grid {
+                padding: 0;
+            }
+            
+            .owl-nav {
+                display: none;
+            }
+        }
+    }
+}

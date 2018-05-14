@@ -1,0 +1,102 @@
+/*==========================================================================
+# Scrolling Image style - begin
+========================================================================== */
+.mkdf-scrolling-image {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+
+    .mkdf-image-title {
+        z-index: 6;
+        white-space: nowrap;
+        font-size: 110px;
+        line-height: 85px;
+        font-weight: 800;
+        color: rgb(248, 248, 248);
+        letter-spacing: -7px;
+        margin: 0px;
+        padding: 0px;
+        min-height: 0px;
+        min-width: 0px;
+        max-height: none;
+        max-width: none;
+    }
+
+    .mkdf-image-holder {
+        position: relative;
+        box-shadow:0 0 20px rgba(0,0,0,.2);
+
+        .mkdf-image-holder-inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            opacity: 0;
+            @include mkdfTransition(opacity 1s cubic-bezier(0.19, 0.2, 0.22, 1));
+
+            &.mkdf-appeared {
+                opacity: 1;
+            }
+
+            &:after {
+                content:'';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(255,255,255,.15);
+                opacity: 0;
+                @include mkdfTransition(opacity .3s);
+            }
+        }
+
+        .mkdf-image-frame{
+            vertical-align: middle;
+            height: 515px;
+            max-height:50vh;
+            width: 100%;
+            opacity:0;
+        }
+    }
+
+    &:hover {
+        .mkdf-image-holder-inner:after {
+            opacity:1;
+        }
+    }
+
+    .mkdf-text-holder {
+        width: 100%;
+        text-align: center;
+        margin-top: 0px;
+
+        .mkdf-image-subtitle{
+            color: $first-main-color;
+            margin-top: 6px;
+        }
+    }
+
+    .mkdf-scrolling-img {
+        display: block;
+        @include mkdfTransform(translate3d(0,0,0));
+        -webkit-filter: blur(); //crisp edges fix in chrome
+        min-height: 100%; //in case height is lower
+        -webkit-transition-timing-function: cubic-bezier(0.51, 0.43, 0.34, 0.56);
+        transition-timing-function: cubic-bezier(0.51, 0.43, 0.34, 0.56);
+    }
+
+    .mkdf-scrolling-image-link {
+        position: absolute;
+        top:0;
+        left:0;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+    }
+}
+/*==========================================================================
+# Device Presentation style - end
+========================================================================== */
