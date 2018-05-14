@@ -4,7 +4,15 @@ web/app/plugins/*
 web/app/mu-plugins/*/
 web/app/upgrade
 web/app/uploads/*
+
 !web/app/uploads/.gitkeep
+!web/app/plugins/contact-form-7
+!web/app/plugins/js_composer
+!web/app/plugins/klippe-core
+!web/app/plugins/klippe-instagram-feed
+!web/app/plugins/klippe-twitter-feed
+!web/app/plugins/revslider
+!web/app/plugins/woocommerce
 
 # WordPress
 web/wp
